@@ -1,14 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import LogoImage from "../../assets/common/logo.png";
 import { menulists } from "../../assets/data/data";
-import { CustomLink, Badges, CustomNavLink } from "./CustomComponents";
-import {
-  IoCartOutline,
-  IoHeartOutline,
-  IoSearchOutline,
-} from "react-icons/io5";
+import { CustomLink, CustomNavLink } from "./CustomComponents";
+import { IoSearchOutline } from "react-icons/io5";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
+import { ModelCart } from "../cart/ModelCart";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -110,22 +107,8 @@ const Header = () => {
               }`}
             >
               <IoSearchOutline size={23} />
-              <div className=" relative z-20 ">
-                <IoHeartOutline size={23} />
-                <div className="absolute -top-2 -right-1.5">
-                  <span>
-                    <Badges color="bg-primary-green">0</Badges>
-                  </span>
-                </div>
-              </div>
-              <div className=" relative z-20 ">
-                <IoCartOutline size={23} />
-                <div className="absolute -top-2 -right-1.5">
-                  <span>
-                    <Badges color="bg-primary-green">0</Badges>
-                  </span>
-                </div>
-              </div>
+
+              <ModelCart />
 
               <button
                 onClick={toggleMenu}

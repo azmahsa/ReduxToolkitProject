@@ -10,3 +10,4 @@ export { Testimonials } from "../components/hero/Testimonials";
 export { InstagramPost } from "../components/hero/InstagramPost";
 export { Shop } from "../screen/shop/Shop";
 export {ProductDeatils} from "../screen/product/ProductDeatils"
+export { CartPage } from "../screen/CartPage";

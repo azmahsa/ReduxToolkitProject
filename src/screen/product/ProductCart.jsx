@@ -12,6 +12,8 @@ import { NavLink } from "react-router-dom";
 import { BodyOne, Title } from "../../components/common/CustomComponents";
 import { AiFillInstagram } from "react-icons/ai";
 import { useDispatch } from "react-redux";
+import { CartAction } from "../../redux/slices/cartSlice";
+import { favoriteActions } from "../../redux/slices/favouriteSlice";
 
 export const RenderRatingsStars = (rating) => {
   const totalStars = 5;
@@ -44,6 +46,8 @@ export const ProductCart = ({
   color,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
+
   const modalOpen = () => {
     setIsModalOpen(true);
   };
@@ -51,7 +55,23 @@ export const ProductCart = ({
     setIsModalOpen(false);
   };
 
-  
+  const discountPrice = price[0].value - (price[0].value * discount) / 100;
+
+  const addToCart = () => {
+    dispatch(CartAction.addToCart({ id, title, price: discountPrice, images }));
+  };
+
+  const handelAddTofavorite = () => {
+    dispatch(
+      favoriteActions.addToFavorites({
+        id,
+        title,
+        price: discountPrice,
+        images,
+      })
+    );
+  };
+
   return (
     <div>
       <div className="product card ">
@@ -81,10 +101,13 @@ export const ProductCart = ({
             >
               Quick view
             </button>
-            <button className="add-to-cart-btn product-btn primary-btn ">
+            <button
+              onClick={addToCart}
+              className="add-to-cart-btn product-btn primary-btn "
+            >
               <IoCart size={23} />
             </button>
-            <button className="love-btn product-btn primary-btn ">
+            <button onClick={handelAddTofavorite} className="love-btn product-btn primary-btn ">
               <IoMdHeart size={23} />
             </button>
           </div>
