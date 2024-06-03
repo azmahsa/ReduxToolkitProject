@@ -8,33 +8,9 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function SampleNextArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className=" absolute bottom-0 mt-14 left-96 lg:left-1/2 slider-btn "
-      onClick={onClick}
-    >
-      <button className="mt-10">
-        <MdKeyboardArrowRight size={50} />
-      </button>
-    </div>
-  );
-}
 
-function SamplePrevArrow(props) {
-  const { onClick } = props;
-  return (
-    <div
-      className=" absolute bottom-0 mt-14 bg-white text-primary left-96 lg:left-[46.5%] slider-btn z-10"
-      onClick={onClick}
-    >
-      <button className="mt-10">
-        <MdKeyboardArrowLeft size={50} />
-      </button>
-    </div>
-  );
-}
+
+
 
 export const Hero = () => {
   const settings = {
@@ -44,8 +20,6 @@ export const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
   };
   return (
     <>
@@ -119,12 +93,12 @@ export const HeroItem = ({ title, deccription, prices, colors, image }) => {
             </div>
           </div>
           <div className=" flex items-center gap-8">
-            <button className=" primary-btn uppercase">view details</button>
+            <button className=" primary-btn uppercase ">view details</button>
             <button className=" secondary-btn uppercase">view shpo</button>
           </div>
         </div>
-        <div className=" right mt-5 bg-white p-5 w-1/2 h-full flex justify-center items-center relative z-50 ">
-          <img src={image} alt="" className="h-[60vh] w-full object-contain" />
+        <div className=" right mt-5 rounded-xl bg-white p-5 w-1/2 h-full flex justify-center items-center relative z-50 ">
+          <img src={image} alt="" className="h-[60vh] w-full  object-contain" />
         </div>
         <div className="lg:bg-black lg:h-[90vh] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10"></div>
       </section>
@@ -167,16 +141,16 @@ const BannerCart = ({ titel, desc, cover, className, classSecond }) => {
   return (
     <>
       <div className="w-full h-full relative ">
-        <img src={cover} alt="" />
+        <img src={cover} className=" rounded-xl" alt="" />
         <div
           className={`${
             className
               ? "absolute bottom-0 p-8 w-full"
               : "flex absolute bottom-0 p-8 w-full"
-          } ${className && classSecond ? " left-0 lg:left-48 top-0 w-96" : ""}`}
+          } ${className && classSecond ? " left-0 lg:left-52 top-0 w-96" : ""}`}
         >
           <div>
-            <Title className="text-[35px]" level={2}>
+            <Title className="text-[35px]" level={3}>
               {titel}
             </Title>
             <p className=" text-lg font-normal leading-none">{desc}</p>

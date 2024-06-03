@@ -22,7 +22,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute bottom-0 right-20 bg-white text-primary rounded-full slider-btn z-10"
+      className="absolute bottom-0  right-20 bg-white text-primary rounded-full slider-btn z-10"
       onClick={onClick}
     >
       <button>
@@ -43,17 +43,17 @@ export const Testimonials = () => {
   };
   return (
     <>
-      <section className="testimonials p-10">
-        <div className=" container h-full flex items-center justify-center  ">
-          <div className="w-1/2 flex relative z-50 mt-28 ">
-            <div className="box w-96 h-96 bg-white rounded-full z-50">
+      <section className="testimonials container p-10">
+        <div className="  h-full flex flex-col gap-8 lg:gap-0 lg:flex-row items-center lg:justify-center justify-start  ">
+          <div className="w-1/2 flex relative z-50 lg:mt-28 mt-0 ">
+            <div className="box hidden lg:flex w-96 h-96 bg-white rounded-full z-50">
               <img
                 src="../../../public/images/hero/girl.png"
                 alt=""
                 className=" absolute -top-[130px] left-0 z-10 rounded-b-full "
               />
             </div>
-            <div className="bg-[rgba(255,255,255,0.5)] absolute top-36 px-5 backdrop-blur-sm p-3 rounded-lg right-40 z-50 ">
+            <div className="hidden lg:flex bg-[rgba(255,255,255,0.5)] absolute top-36 px-5 backdrop-blur-sm p-3 rounded-lg right-40 z-50 ">
               <BodyOne className="leading-none ">Our Satisfied User</BodyOne>
               <div className=" flex items-center">
                 <img
@@ -72,7 +72,7 @@ export const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="left w-1/2 relative z-50 ">
+          <div className="left lg:w-1/2 lg:text-left w-[80%] text-center relative z-50 ">
             <Title level={2}>what our clients say about us</Title>
             <BodyOne className="mb-8">
               It is long established fact that a reader will be distracted by

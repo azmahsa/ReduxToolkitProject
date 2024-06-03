@@ -44,7 +44,7 @@ export const ShippingInfo = () => {
             );
           })}
         </div>
-        <div className="box bg-primary p-8 flex flex-col lg:flex-row items-center justify-between  ">
+        <div className="box rounded-xl bg-primary p-8 flex flex-col lg:flex-row items-center justify-between  ">
           <div className="left flex items-center gap-3">
             <BiChat size={"100"} color="white" />
             <div>
@@ -57,8 +57,8 @@ export const ShippingInfo = () => {
               </BodyOne>
             </div>
           </div>
-          <div className="w-full p-5 px-8 lg:w-1/2 ">
-            <input type="text" className=" outline-none w-full p-3" />
+          <div className="w-full  p-5 px-8 lg:w-1/2  ">
+            <input type="text" className="rounded-xl outline-none w-full p-3" />
           </div>
         </div>
       </section>

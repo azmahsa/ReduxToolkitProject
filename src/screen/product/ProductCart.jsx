@@ -86,10 +86,10 @@ export const ProductCart = ({
               />
             );
           })}
-          <div className=" flex justify-between w-full p-5 absolute top-0 left-0">
-            {discount && <button className=" discount-btn">{discount}%</button>}
+          <div className=" flex  justify-between w-full p-5 absolute top-0 left-0">
+            {discount && <button className=" discount-btn rounded-xl">{discount}%</button>}
             {featured && (
-              <button className=" feature-btn">
+              <button className=" feature-btn rounded-xl">
                 {featured === true && "featured"}
               </button>
             )}

@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={
           isHomePage
-            ? `header px-12 py-3 bg-white-100 relative z-20 ${
+            ? `header w-[100%]  px-12 py-3 bg-white-100 relative z-20 ${
                 isScrolled ? "scrolled" : ""
               }`
             : `header px-12 py-3  relative z-20 ${isScrolled ? "scrolled" : ""}`
@@ -58,11 +58,11 @@ const Header = () => {
           <div
             className={`${
               isScrolled ? " lg:bg-none" : " lg:bg-black"
-            } lg:h-[88px] lg:absolute lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}
+            } lg:h-[88px] lg:absolute  lg:top-0 lg:right-0 lg:w-1/3 lg:-z-10`}
           ></div>
         )}
 
-        <nav className="p-4 flex justify-between items-center relative">
+        <nav className="p-4 flex justify-between items-center w-full relative">
           <div className="flex items-center gap-14">
             <div>
               <img src={LogoImage} alt="LogoImg" className="h-7" />
@@ -112,7 +112,7 @@ const Header = () => {
 
               <button
                 onClick={toggleMenu}
-                className="lg:hidden w-10 h-10 flex justify-center items-center bg-black text-white focus:outline-none"
+                className="lg:hidden w-10 rounded-xl h-10 flex justify-center items-center bg-black text-white focus:outline-none"
               >
                 {isOpen ? (
                   <AiOutlineClose size={24} />
