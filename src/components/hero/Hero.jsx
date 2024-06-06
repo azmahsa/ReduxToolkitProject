@@ -23,7 +23,7 @@ export const Hero = () => {
   };
   return (
     <>
-      <section className=" h-[50vh] lg:h-[90vh] mt-20 bg-white-100 relative z-1 ">
+      <section className=" h-[60vh] lg:h-[90vh] mt-20 bg-white-100 relative z-1 ">
         <Slider {...settings}>
           {herolist.map((item) => {
             return (
@@ -58,20 +58,20 @@ export const HeroItem = ({ title, deccription, prices, colors, image }) => {
 
   return (
     <>
-      <section className=" content flex justify-between lg:px-16 h-[50vh] lg:h-[90vh] relative z-20 ">
-        <div className="left w-1/2 p-8 lg:py-28">
+      <section className=" content flex justify-between lg:px-16 h-[60vh] lg:h-[90vh] relative z-20 ">
+        <div className="left w-[50%] p-8 lg:py-20">
           <Title
-            level={3}
-            className="leading-none font-normal md:text-3xl lg:text-[65px] lg:leading-snug"
+    
+            className="leading-none font-[600] text-primary  md:text-3xl text-[25px] lg:text-[55px] lg:leading-snug"
           >
             {title}
           </Title>
-          <BodyOne>{deccription}</BodyOne>
+          <p className='text-[14px]  font-normal text-primary-gray mb-4'>{deccription}</p>
           <div className="flex items-start gap-8 my-5">
             <div>
               <Caption>Prices</Caption>
               <div className="mt-3">
-                <Title level={5}>${selectPrice.value.toFixed(2)}</Title>
+                <Title className='text-[16px]'>${selectPrice.value.toFixed(2)}</Title>
               </div>
             </div>
             <div>
@@ -93,8 +93,8 @@ export const HeroItem = ({ title, deccription, prices, colors, image }) => {
             </div>
           </div>
           <div className=" flex items-center gap-8">
-            <button className=" primary-btn uppercase ">view details</button>
-            <button className=" secondary-btn uppercase">view shpo</button>
+            <button className=" primary-btn uppercase  ">view details</button>
+            <button className=" secondary-btn uppercase">view shop</button>
           </div>
         </div>
         <div className=" right mt-5 rounded-xl bg-white p-5 w-1/2 h-full flex justify-center items-center relative z-50 ">
@@ -150,7 +150,7 @@ const BannerCart = ({ titel, desc, cover, className, classSecond }) => {
           } ${className && classSecond ? " left-0 lg:left-52 top-0 w-96" : ""}`}
         >
           <div>
-            <Title className="text-[35px]" level={3}>
+            <Title className="text-[25px]" level={5}>
               {titel}
             </Title>
             <p className=" text-lg font-normal leading-none">{desc}</p>

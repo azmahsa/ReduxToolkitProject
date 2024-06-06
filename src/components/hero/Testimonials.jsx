@@ -45,12 +45,12 @@ export const Testimonials = () => {
     <>
       <section className="testimonials container p-10">
         <div className="  h-full flex flex-col gap-8 lg:gap-0 lg:flex-row items-center lg:justify-center justify-start  ">
-          <div className="w-1/2 flex relative z-50 lg:mt-28 mt-0 ">
-            <div className="box hidden lg:flex w-96 h-96 bg-white rounded-full z-50">
+          <div className="w-1/2  flex relative z-50 lg:mt-28 mt-0 ">
+            <div className="box hidden lg:flex w-80 h-80 bg-white rounded-full z-50">
               <img
                 src="../../../public/images/hero/girl.png"
                 alt=""
-                className=" absolute -top-[130px] left-0 z-10 rounded-b-full "
+                className=" absolute -top-[200px] left-[-20px] z-10 rounded-b-full "
               />
             </div>
             <div className="hidden lg:flex bg-[rgba(255,255,255,0.5)] absolute top-36 px-5 backdrop-blur-sm p-3 rounded-lg right-40 z-50 ">
@@ -72,9 +72,9 @@ export const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="left lg:w-1/2 lg:text-left w-[80%] text-center relative z-50 ">
+          <div className="left lg:w-1/2 lg:text-left w-[95%] text-center relative z-50 ">
             <Title level={2}>what our clients say about us</Title>
-            <BodyOne className="mb-8">
+            <BodyOne className="mb-4 lg:mb-8">
               It is long established fact that a reader will be distracted by
               the reazabl content of a page when looking at its layout. The
               point of using lorem ipusm is that it has a more-or-less normal

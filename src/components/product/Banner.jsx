@@ -7,7 +7,7 @@ export const Banner = () => {
         {promotionalInfo.map((item) => {
           return (
             <>
-              <div className="box relative w-full" key={item.id}>
+              <div className="box relative w-full " key={item.id}>
                 <div className="w-full h-full">
                   <img
                     className="w-full  h-[50vh] object-cover"
@@ -15,14 +15,14 @@ export const Banner = () => {
                     alt=""
                   />
                 </div>
-                <div className="  top-0 absolute  left-0 p-3 md:p-8 lg:w-2/3 ">
+                <div className=" p-3 top-0 absolute  left-0  md:p-8 lg:w-2/3 ">
                   <span className="bg-white rounded-xl px-6 py-2 text-sm">
                     {item.title}
                   </span>
-                  <Title level={2} className="my-5">
+                  <Title level={3} className="my-5">
                     {item.title}
                   </Title>
-                  <BodyOne level={2} className="my-5 text-justify w-[80%]">
+                  <BodyOne level={3} className="my-5 text-justify w-[90%]">
                     {item.description}
                   </BodyOne>
                   <button className="secondary-btn">Shop Now</button>

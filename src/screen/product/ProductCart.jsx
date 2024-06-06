@@ -75,7 +75,7 @@ export const ProductCart = ({
   return (
     <div>
       <div className="product card ">
-        <div className="images h-96">
+        <div className="images h-96 rounded-t-xl">
           {images.map((cover, index) => {
             return (
               <img
@@ -112,7 +112,7 @@ export const ProductCart = ({
             </button>
           </div>
         </div>
-        <div className="details flex items-center flex-col bg-white pt-6">
+        <div className="details flex items-center flex-col bg-white rounded-b-xl pt-6">
           <NavLink to={`/product-details/${id}`}>
             <BodyOne>{title}</BodyOne>
           </NavLink>

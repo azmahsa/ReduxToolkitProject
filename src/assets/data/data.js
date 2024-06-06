@@ -36,7 +36,7 @@ export const herolist = [
     id: 1,
     title: "Natural Wooden Products",
     description:
-      "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
+      "Sell globally in minutes with localized currencies,and experiences in every market.",
     image: "../images/hero/h1.png",
     price: [
       {
@@ -58,7 +58,7 @@ export const herolist = [
     id: 2,
     title: "Explore Wooden Products",
     description:
-      "Sell globally in minutes with localized currencies, languages, and experiences in every market.",
+      "Sell globally in minutes with localized currencies and experiences in every market.",
     image: "../images/hero/h2.png",
     price: [
       {
@@ -281,16 +281,16 @@ const additionalInfo = [
 export const promotionalInfo = [
   {
     id: 1,
-    title: "Free Shipping On All Orders",
+    title: "Free Shipping ",
     description:
-      "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+      "Shop & shipment across the whole North America. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around.",
     image: "../images/promotional/prom1.png",
   },
   {
     id: 2,
     title: "From $29.05",
     description:
-      "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around and the meridian sun strikes the upper surface.",
+      "Organic Skincare for Glowing Complexion. Lorem Ipsum is simply dummy text of It’s easy to get lost in the world of lovely valley vapour around.",
     image: "../images/promotional/prom2.png",
   },
 ];
