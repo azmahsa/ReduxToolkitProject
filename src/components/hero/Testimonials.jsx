@@ -48,21 +48,21 @@ export const Testimonials = () => {
           <div className="w-1/2  flex relative z-50 lg:mt-28 mt-0 ">
             <div className="box hidden lg:flex w-80 h-80 bg-white rounded-full z-50">
               <img
-                src="../../../public/images/hero/girl.png"
+                src="../images/hero/girl.png"
                 alt=""
-                className=" absolute -top-[200px] left-[-20px] z-10 rounded-b-full "
+                className=" absolute -top-[200px] left-[-22px] z-10 rounded-b-full "
               />
             </div>
             <div className="hidden lg:flex bg-[rgba(255,255,255,0.5)] absolute top-36 px-5 backdrop-blur-sm p-3 rounded-lg right-40 z-50 ">
               <BodyOne className="leading-none ">Our Satisfied User</BodyOne>
               <div className=" flex items-center">
                 <img
-                  src="../../../public/images/testimonial/pic1-2.png"
+                  src="../images/testimonial/pic1-2.png"
                   className="w-14 h-14 object-cover rounded-full border-2 border-gray-100  "
                   alt=""
                 />
                 <img
-                  src="../../../public/images/testimonial/pic2-2.png"
+                  src="../images/testimonial/pic2-2.png"
                   className="-ml-4 w-14 h-14 object-cover rounded-full border-2 border-gray-100  "
                   alt=""
                 />
@@ -84,12 +84,12 @@ export const Testimonials = () => {
               <TestimonialsCard
                 name="Kenneth Fong"
                 post="Undergraduate Student"
-                cover="../../../public/images/testimonial/pic5.jpg"
+                cover="../images/testimonial/pic5.jpg"
               />
               <TestimonialsCard
                 name="Joe Do"
                 post="Postgraduate Student"
-                cover="../../../public/images/testimonial/pic6.jpg"
+                cover="../public/images/testimonial/pic6.jpg"
               />
             </Slider>
           </div>
